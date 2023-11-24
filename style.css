@@ -31,6 +31,17 @@ body {
     gap: 8.5rem;
 }
 
+.content-list {
+    display: grid;
+    grid-template-areas: 
+        ". . . . ."
+        ". . hero . ."
+        ". . form . ."
+        ". . . . ."
+    ;
+    gap: 4.2rem;
+}
+
 aside {
     grid-area: hero;
 }
@@ -42,6 +53,7 @@ main {
 aside h1 {
     font-size: 64px;
     line-height: 75px;
+    text-align: center;
 }
 
 aside h1 span, main h2 span {
@@ -55,6 +67,11 @@ main {
     border: var(--default-border);
     padding: 4.4rem 5.7rem;
     position: relative;
+}
+
+main.list {
+    width: 80rem;
+    height: 50rem;
 }
 
 main h2 {
@@ -166,4 +183,36 @@ main form input + button {
     color: #35E6E9;
     font-size: 2.4rem;
     cursor: pointer;
+}
+
+main div ol li {
+    list-style: none;
+    font-size: 2.4rem;
+    padding: 2.8rem;
+
+}
+
+main div ol li span {
+    margin-left: 2.4rem;
+    padding: 0.5rem 2.9rem;
+    color: #35E6E9;
+    border: 0.1rem solid;
+    border-radius: 0.8rem;
+}
+
+.list {
+    padding: 2.0rem;
+}
+
+p.form-campo {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+h3 {
+    color: #FF5678;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
 }
