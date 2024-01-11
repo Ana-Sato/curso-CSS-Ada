@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/*Tablet e Telas maiores
+*/
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+    div.content {
+        display: grid;
+        grid-template-areas: 
+            ". . . "
+            ". hero ."
+            ". form ."
+            ". . . "
+        ;
+        gap: 1.2rem;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        grid-area: hero;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside > img {
+        width: 28rem;
+        margin: auto;
+    }
+
+    aside > h1 {
+        font-size: 40px;
+    }
+    
+    main {
+        grid-area: form;
+        margin: auto;
+        align-items: center;
+        padding: 2.5rem 2.5rem;
+        width: 30rem;
+        height: 34rem;
+    }
+
+    main h2 {
+        max-width: 90vw;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+   
+
+    main .actions a {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
+
+    main .actions a + a{
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
+
+    main footer p {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    main footer a {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+
+    div.content {
+        display: grid;
+        grid-template-areas: 
+            ". . . "
+            ". hero ."
+            ". form ."
+            ". . . "
+        ;
+        gap: 5rem;
+    }
+
+    aside {
+        grid-area: hero;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main {
+        grid-area: form;
+        margin: auto;
+        align-items: center;
+        padding: 4rem 5rem;
+        height: 48rem;
+    }
+
+    main .actions a {
+        margin-top: 5rem;
+    }
+
+    main footer p {
+        margin-top: 6rem;
+        font-size: 1.8rem;
+    }
+
+}
+
