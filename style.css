@@ -14,6 +14,8 @@ Design Figma: https://www.figma.com/file/w11Rpk9e1tqreNMtHAVrDm/We-Form?type=des
     --default-border-radius: 1.2rem;
 }
 
+/* Pagina prrincipal*/
+
 body {
     font-family:'Roboto', sans-serif;
     font-size: 1.4rem;
@@ -29,25 +31,6 @@ body {
         ". . . . ."
     ;
     gap: 8.5rem;
-}
-
-.content-list {
-    display: grid;
-    grid-template-areas: 
-        ". . . . ."
-        ". . hero . ."
-        ". . form . ."
-        ". . . . ."
-    ;
-    gap: 4.2rem;
-}
-
-aside {
-    grid-area: hero;
-}
-
-main {
-    grid-area: form;
 }
 
 aside h1 {
@@ -67,11 +50,6 @@ main {
     border: var(--default-border);
     padding: 4.4rem 5.7rem;
     position: relative;
-}
-
-main.list {
-    width: 80rem;
-    height: 50rem;
 }
 
 main h2 {
@@ -103,18 +81,6 @@ main .actions a + a {
     background-color: #FF5678;
 }
 
-main header {
-    display: flex;
-    align-items: center;
-    gap:0 1.8rem;
-}
-
-main header i {
-    font-size: 2.6rem;
-    color: #FF5678;
-    
-}
-
 main footer p {
     margin-top: 8rem;
     font-size: 1.6rem;
@@ -126,6 +92,38 @@ main footer a {
     display: block;
     text-align: center;
     color: #000;
+}
+
+/* Pagina Cadastrar entidade*/
+.content-list {
+    display: grid;
+    grid-template-areas: 
+        ". . . . ."
+        ". . hero . ."
+        ". . form . ."
+        ". . . . ."
+    ;
+    gap: 4.2rem;
+}
+
+aside {
+    grid-area: hero;
+}
+
+main {
+    grid-area: form;
+}
+
+main header {
+    display: flex;
+    align-items: center;
+    gap:0 1.8rem;
+}
+
+main header i {
+    font-size: 2.6rem;
+    color: #FF5678;
+    
 }
 
 main form {
@@ -185,6 +183,14 @@ main form input + button {
     cursor: pointer;
 }
 
+/* Pagina Cadastrar entidade*/
+
+main.list {
+    width: 80rem;
+    height: 50rem;
+    padding: 2.0rem;
+}
+
 main div ol li {
     list-style: none;
     font-size: 2.4rem;
@@ -200,8 +206,11 @@ main div ol li span {
     border-radius: 0.8rem;
 }
 
-.list {
-    padding: 2.0rem;
+h3 {
+    color: #FF5678;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
 }
 
 p.form-campo {
@@ -210,9 +219,5 @@ p.form-campo {
     padding: 2rem;
 }
 
-h3 {
-    color: #FF5678;
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-align: center;
-}
+
+
