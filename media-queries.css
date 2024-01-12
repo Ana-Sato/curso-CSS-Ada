@@ -3,17 +3,48 @@
 /*Tablet e Telas maiores
 */
 
-@media screen and (min-width: 300px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 600px) {
 
     div.content {
-        display: grid;
-        grid-template-areas: 
-            ". . . "
-            ". hero ."
-            ". form ."
-            ". . . "
-        ;
-        gap: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        margin: 5rem auto;
+        gap: 1.5rem;
+    }
+
+    .content-list {
+        display: flex;
+        flex-direction: column;
+        margin: 5rem auto;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    main.list {
+        width: 80vw;
+        height: 35rem;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main div ol li {
+        list-style: none;
+        font-size: 1.4rem;
+        padding: 1.8rem;
+    
+    }
+    
+    main div ol li span {
+        width: 80%;
+        margin: 1rem;
+        padding: 0.5rem 0.9rem;
+        border-radius: 0.8rem;
+    }
+
+    .list {
+        padding: 2.5rem 0.2rem;
     }
 
     aside {
@@ -27,7 +58,7 @@
     }
 
     aside > img {
-        width: 28rem;
+        width: 25rem;
         margin: auto;
     }
 
@@ -37,23 +68,30 @@
     
     main {
         grid-area: form;
-        margin: auto;
+        margin: 0 auto;
         align-items: center;
-        padding: 2.5rem 2.5rem;
+        padding: 3rem 2.5rem;
         width: 30rem;
-        height: 34rem;
+        height: 36rem;
     }
 
     main h2 {
         max-width: 90vw;
         font-size: 1.8rem;
         text-align: center;
+        padding-bottom: 1.2rem;
     }
 
-   
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    p.form-campo {
+        padding: 1rem;
+    }
 
     main .actions a {
-        margin-top: 2rem;
+        margin-top: 1rem;
         font-size: 1.8rem;
     }
 
@@ -64,20 +102,45 @@
 
     main footer p {
         text-align: center;
-        margin-top: 2rem;
-        font-size: 1.5rem;
+        margin-top: 3rem;
+        font-size: 1.2rem;
     }
 
     main footer a {
         font-size: 1.5rem;
     }
 
+    main form label {
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-transform: lowercase;
+        margin-top: 1.2rem;
+        margin-bottom: 0.7rem;
+        display: block;
+    }
+
+    main form .select-div::after {
+        top: 0.7rem;
+    }
+
+    main form :is(input, select) {
+        width: 98%;
+        height: 3.2rem;
+        border-radius: 0.5rem;
+    }
+
+    main form input + button {
+        right: 1rem;
+        top: calc(0.8rem + 2rem);
+        font-size: 1.8rem;
+    }
 }
 
-@media screen and (min-width:768px) and (max-width: 992px) {
+@media screen and (min-width:768px) and (max-width: 1024px) {
 
     div.content {
         display: grid;
+        margin: 10rem auto;
         grid-template-areas: 
             ". . . "
             ". hero ."
@@ -87,23 +150,79 @@
         gap: 5rem;
     }
 
+    div.content {
+        display: flex;
+        flex-direction: column;
+        margin: 5rem auto;
+        gap: 1.5rem;
+    }
+
+    .content-list {
+        display: flex;
+        flex-direction: column;
+        margin: 25rem auto;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    main.list {
+        width: 80vw;
+        height: 48rem;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main div ol li {
+        list-style: none;
+        font-size: 2.4rem;
+        padding: 2.4rem;
+    
+    }
+    
+    main div ol li span {
+        width: 80%;
+        margin: 1rem;
+        padding: 1rem 5rem;
+        border-radius: 0.8rem;
+    }
+
+    .list {
+        padding: 4rem 1.2rem;
+    }
+
     aside {
         grid-area: hero;
         margin: auto;
         align-items: center;
         justify-content: center;
     }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    p.form-campo {
+        padding: 2rem;
+    }
     
     main {
         grid-area: form;
         margin: auto;
         align-items: center;
-        padding: 4rem 5rem;
+        padding: 3rem 5rem;
         height: 48rem;
     }
 
+    main form input + button {
+        right: 2rem;
+        top: calc(2.8rem + 2rem);
+        font-size: 2.5rem;
+    }
+
     main .actions a {
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     main footer p {

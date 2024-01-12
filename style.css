@@ -176,7 +176,7 @@ main form .points {
 
 main form input + button {
     position: absolute;
-    right: -4.2rem;
+    right: -0.1rem;
     top: calc(2.7rem + 2rem);
     background-color: transparent;
     border: none;
